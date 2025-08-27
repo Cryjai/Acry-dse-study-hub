@@ -1,0 +1,660 @@
+// Application data
+const resourcesData = {
+    "中文": [
+        {
+            title: "卷一試題分析",
+            description: "詳細分析DSE中文卷一試題",
+            url: "https://youtube.com/playlist?list=PLq8LKt8nFQcmiySHLuWrSJr-jFy6UkGhg&feature=shared"
+        }
+    ],
+    "English": [
+        {
+            title: "Mr Wong English corner youtube",
+            description: "英文語法和寫作技巧教學",
+            url: "https://youtube.com/@mrwongsenglishcorner8789?feature=shared"
+        },
+        {
+            title: "MingSir English youtube",
+            description: "英文綜合技能訓練",
+            url: "https://youtube.com/@mingsirenglish?feature=shared"
+        }
+    ],
+    "Math": [
+        {
+            title: "Mock Papers",
+            description: "數學模擬試卷練習",
+            url: "https://drive.google.com/drive/folders/1-zfKKc3uYsP7WLiMTNKGYysTOdKVYKoh"
+        },
+        {
+            title: "DSE Past Papers",
+            description: "歷屆DSE數學試題",
+            url: "https://drive.google.com/drive/folders/1NwYe3Mw51v3QpQ_x_bSKy_-VHuFYC5-9"
+        },
+        {
+            title: "我有數要問 playlist",
+            description: "數學疑難解答",
+            url: "https://youtube.com/playlist?list=PL19ztSaw3zaWZRAV9gisvzvTlBDK6zxS_&feature=shared"
+        },
+        {
+            title: "3D geometry playlist",
+            description: "立體幾何專題",
+            url: "https://youtube.com/playlist?list=PL19ztSaw3zaXjjZV0XoXCqfVvdzJ7oY-J&feature=shared"
+        },
+        {
+            title: "F6 Core Regular Course",
+            description: "中六核心數學常規課程",
+            url: "https://youtube.com/playlist?list=PL19ztSaw3zaXdFVQ5VyLMGbIqdf-AJ5zZ&feature=shared"
+        },
+        {
+            title: "2025 P1 題解",
+            description: "2025年Paper 1詳解",
+            url: "https://youtu.be/ccdEdKf_9tw?feature=shared"
+        },
+        {
+            title: "2025 P2 題解", 
+            description: "2025年Paper 2詳解",
+            url: "https://youtu.be/tX1-As-5O60?feature=shared"
+        }
+    ],
+    "M2": [
+        {
+            title: "Mock Papers",
+            description: "M2模擬試卷",
+            url: "https://drive.google.com/drive/folders/1q6TCLb6keLplbD6NJxTmrLhDvPJqxABk"
+        },
+        {
+            title: "Binomial theorem",
+            description: "二項式定理專題",
+            url: "https://youtube.com/playlist?list=PL19ztSaw3zaXFteKO6j6RxxvRJ7Pzbou7&feature=shared"
+        },
+        {
+            title: "Change variables & substitute",
+            description: "換元與代換技巧",
+            url: "https://youtube.com/playlist?list=PL19ztSaw3zaXiTCijSpFVaiYLNNIHlkvl&feature=shared"
+        },
+        {
+            title: "Rate of change",
+            description: "變化率相關題型",
+            url: "https://youtube.com/playlist?list=PL19ztSaw3zaXkQNxQ5gZyb_tE_nE2GO7q&feature=shared"
+        },
+        {
+            title: "Integral hard problems",
+            description: "積分難題解析",
+            url: "https://youtube.com/playlist?list=PL19ztSaw3zaX2o7mVAaXudd5R_8u0zVTm&feature=shared"
+        },
+        {
+            title: "Vector problems",
+            description: "向量相關問題",
+            url: "https://youtube.com/playlist?list=PL19ztSaw3zaUGlpOx7YGu-IPn12i_fN5A&feature=shared"
+        },
+        {
+            title: "Matrix operations",
+            description: "矩陣運算專題",
+            url: "https://youtube.com/playlist?list=PL19ztSaw3zaUMy2Fc3SbOSh_oMJ5RGPKW&feature=shared"
+        },
+        {
+            title: "M2 2025 題解",
+            description: "2025年M2詳解",
+            url: "https://youtu.be/aRTGRSpl1ng?feature=shared"
+        },
+        {
+            title: "DSE Past Papers",
+            description: "M2歷屆試題",
+            url: "https://drive.google.com/drive/folders/1B66eWPwN038ec5uqd6f8V0bjubodVWjI"
+        }
+    ],
+    "Econ": [
+        {
+            title: "Mock Papers",
+            description: "經濟模擬試卷",
+            url: "https://drive.google.com/drive/folders/106UvdJiVdV4XCxpwf1oQKyeXG3WinayB"
+        },
+        {
+            title: "DSE Past Papers",
+            description: "經濟歷屆試題",
+            url: "https://drive.google.com/drive/folders/0B2X4RUjh5-q-eEVoZExIWlhtcWs?resourcekey=0-IgB1CwBtBdR_O_gfIPqYlA"
+        },
+        {
+            title: "Study Notes",
+            description: "經濟科溫習筆記",
+            url: "https://drive.google.com/drive/folders/1A3Q5G2th7QJB7jRH0bgIipMTYrO1zH09"
+        },
+        {
+            title: "Youtube Checklist",
+            description: "經濟科YouTube溫習清單",
+            url: "https://docs.google.com/document/d/11-kpbMYqjhqJKRwx3l-1UOAtoNjmXEGb/edit?usp=drivesdk&ouid=106653973681653359890&rtpof=true&sd=true"
+        }
+    ],
+    "中史": [
+        {
+            title: "Study Notes",
+            description: "中史溫習筆記",
+            url: "https://drive.google.com/drive/folders/1XSoINuIkbbaq8c3gTbiTolWC6-MlQwdPbI-_RTbBrYsaSOpX3RupWMEHXehLmtRz-9Ws6csG"
+        },
+        {
+            title: "DSE Past Papers",
+            description: "中史歷屆試題",
+            url: "https://drive.google.com/drive/folders/1GlYHHL7VabCU-uG8o3--cMIC-xT0ou_7"
+        }
+    ],
+    "Other": [
+        {
+            title: "毒舌To do list",
+            description: "生活管理工具",
+            url: "https://cryjai.github.io/life-bankruptcy-trackor/"
+        }
+    ]
+};
+
+const examDates = {
+    "中文": "2026-04-09",
+    "English": "2026-04-10", 
+    "Math": "2026-04-13",
+    "M2": "2026-04-30",
+    "Econ": "2026-05-04",
+    "中史": "2026-04-29"
+};
+
+const gradingCutoffs = {
+    "中文": {"5**": 70, "5*": 67, "5": 64, "4": 60, "3": 51, "2": 42, "1": 32},
+    "English": {"5**": 85, "5*": 74, "5": 65, "4": 60, "3": 49, "2": 40, "1": 31},
+    "Math": {"5**": 93, "5*": 88, "5": 80, "4": 70, "3": 50, "2": 40, "1": 30},
+    "M2": {"5**": 88, "5*": 78, "5": 67, "4": 59, "3": 51, "2": 44, "1": 35},
+    "Econ": {"5**": 90, "5*": 88, "5": 85, "4": 57, "3": 48, "2": 40, "1": 30},
+    "中史": {"5**": 83, "5*": 78, "5": 73, "4": 62, "3": 51, "2": 41, "1": 32}
+};
+
+// Global variables
+let gradeRecords = [];
+let charts = {};
+
+// Initialize the application
+document.addEventListener('DOMContentLoaded', function() {
+    initializeApp();
+    loadGradeRecords();
+    populateResources();
+    initializeCountdowns();
+    initializeNavigation();
+    initializeResourceCategories();
+    initializeGradeForm();
+    updateCharts();
+});
+
+function initializeApp() {
+    console.log('Acry Study Hub initialized');
+}
+
+// Navigation functionality
+function initializeNavigation() {
+    const navButtons = document.querySelectorAll('.nav-btn');
+    const sections = document.querySelectorAll('.section');
+
+    navButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const targetSection = button.getAttribute('data-section');
+            
+            // Update navigation
+            navButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            
+            // Update sections
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(targetSection).classList.add('active');
+        });
+    });
+}
+
+// Countdown timer functionality
+function initializeCountdowns() {
+    const countdownTimers = document.querySelectorAll('.countdown-timer');
+    
+    countdownTimers.forEach(timer => {
+        const targetDate = timer.getAttribute('data-date');
+        if (targetDate) {
+            updateCountdown(timer, targetDate);
+            setInterval(() => updateCountdown(timer, targetDate), 1000);
+        }
+    });
+}
+
+function updateCountdown(timerElement, targetDate) {
+    const now = new Date().getTime();
+    const target = new Date(targetDate + 'T09:00:00+08:00').getTime(); // 9 AM HK time
+    const distance = target - now;
+    
+    if (distance > 0) {
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        timerElement.querySelector('[data-unit="days"]').textContent = days.toString().padStart(3, '0');
+        timerElement.querySelector('[data-unit="hours"]').textContent = hours.toString().padStart(2, '0');
+        timerElement.querySelector('[data-unit="minutes"]').textContent = minutes.toString().padStart(2, '0');
+        timerElement.querySelector('[data-unit="seconds"]').textContent = seconds.toString().padStart(2, '0');
+    } else {
+        timerElement.querySelector('[data-unit="days"]').textContent = '000';
+        timerElement.querySelector('[data-unit="hours"]').textContent = '00';
+        timerElement.querySelector('[data-unit="minutes"]').textContent = '00';
+        timerElement.querySelector('[data-unit="seconds"]').textContent = '00';
+    }
+}
+
+// Resource population
+function populateResources() {
+    Object.keys(resourcesData).forEach(category => {
+        const container = document.getElementById(`${category}-links`);
+        if (container) {
+            container.innerHTML = '';
+            resourcesData[category].forEach(resource => {
+                const linkElement = document.createElement('a');
+                linkElement.className = 'resource-link';
+                linkElement.href = resource.url;
+                linkElement.target = '_blank';
+                linkElement.innerHTML = `
+                    <h4>${resource.title}</h4>
+                    <p>${resource.description}</p>
+                `;
+                container.appendChild(linkElement);
+            });
+        }
+    });
+}
+
+// Resource category expansion - Fixed version
+function initializeResourceCategories() {
+    const categories = document.querySelectorAll('.resource-category');
+    
+    categories.forEach((category, index) => {
+        const header = category.querySelector('.category-header');
+        if (header) {
+            // Remove any existing listeners to prevent duplicates
+            header.removeEventListener('click', handleCategoryClick);
+            // Add click listener
+            header.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                category.classList.toggle('expanded');
+            });
+        }
+    });
+}
+
+function handleCategoryClick(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const category = e.currentTarget.closest('.resource-category');
+    if (category) {
+        category.classList.toggle('expanded');
+    }
+}
+
+// Grade form functionality
+function initializeGradeForm() {
+    const form = document.getElementById('grade-form');
+    if (form) {
+        form.addEventListener('submit', handleGradeSubmit);
+    }
+}
+
+function handleGradeSubmit(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(e.target);
+    const subject = formData.get('subject');
+    const paperName = formData.get('paperName');
+    const score = parseFloat(formData.get('score'));
+    
+    if (!subject || !paperName || isNaN(score)) {
+        showNotification('請填寫所有必填欄位', 'error');
+        return;
+    }
+    
+    const grade = calculateGrade(subject, score);
+    const record = {
+        id: Date.now(),
+        subject,
+        paperName,
+        score,
+        grade,
+        date: new Date().toLocaleDateString('zh-HK')
+    };
+    
+    gradeRecords.push(record);
+    saveGradeRecords();
+    updateGradeTable();
+    updateCharts();
+    
+    // Reset form
+    e.target.reset();
+    
+    // Show success feedback
+    showNotification('成績記錄已新增！', 'success');
+}
+
+function calculateGrade(subject, score) {
+    const cutoffs = gradingCutoffs[subject];
+    if (!cutoffs) return 'U';
+    
+    if (score >= cutoffs['5**']) return '5**';
+    if (score >= cutoffs['5*']) return '5*';
+    if (score >= cutoffs['5']) return '5';
+    if (score >= cutoffs['4']) return '4';
+    if (score >= cutoffs['3']) return '3';
+    if (score >= cutoffs['2']) return '2';
+    if (score >= cutoffs['1']) return '1';
+    return 'U';
+}
+
+// Grade records management
+function loadGradeRecords() {
+    const stored = localStorage.getItem('acry-grade-records');
+    if (stored) {
+        try {
+            gradeRecords = JSON.parse(stored);
+        } catch (e) {
+            gradeRecords = [];
+        }
+    }
+    updateGradeTable();
+}
+
+function saveGradeRecords() {
+    localStorage.setItem('acry-grade-records', JSON.stringify(gradeRecords));
+}
+
+function updateGradeTable() {
+    const tbody = document.getElementById('grade-table-body');
+    if (!tbody) return;
+    
+    tbody.innerHTML = '';
+    
+    gradeRecords.sort((a, b) => b.id - a.id).forEach(record => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${record.subject}</td>
+            <td>${record.paperName}</td>
+            <td>${record.score}</td>
+            <td><span class="grade-badge grade-${record.grade.toLowerCase().replace('*', '-star')}">${record.grade}</span></td>
+            <td>${record.date}</td>
+            <td><button class="delete-btn" onclick="deleteRecord(${record.id})">刪除</button></td>
+        `;
+        tbody.appendChild(row);
+    });
+}
+
+function deleteRecord(id) {
+    gradeRecords = gradeRecords.filter(record => record.id !== id);
+    saveGradeRecords();
+    updateGradeTable();
+    updateCharts();
+    showNotification('記錄已刪除', 'info');
+}
+
+// Chart functionality
+function updateCharts() {
+    updateGradeDistributionChart();
+    updateSubjectAverageChart();
+    updateProgressChart();
+}
+
+function updateGradeDistributionChart() {
+    const ctx = document.getElementById('gradeChart');
+    if (!ctx) return;
+    
+    if (charts.gradeChart) {
+        charts.gradeChart.destroy();
+    }
+    
+    const gradeCounts = {};
+    gradeRecords.forEach(record => {
+        gradeCounts[record.grade] = (gradeCounts[record.grade] || 0) + 1;
+    });
+    
+    const gradeOrder = ['5**', '5*', '5', '4', '3', '2', '1', 'U'];
+    const labels = [];
+    const data = [];
+    const colors = ['#ffd700', '#32c8eb', '#4ade80', '#60a5fa', '#fb7185', '#fbbf24', '#6b7280', '#374151'];
+    
+    gradeOrder.forEach((grade, index) => {
+        if (gradeCounts[grade]) {
+            labels.push(grade);
+            data.push(gradeCounts[grade]);
+        }
+    });
+    
+    charts.gradeChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: labels,
+            datasets: [{
+                data: data,
+                backgroundColor: colors.slice(0, labels.length),
+                borderColor: 'rgba(255, 255, 255, 0.2)',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: 'white',
+                        font: {
+                            family: 'Inter'
+                        }
+                    }
+                }
+            }
+        }
+    });
+}
+
+function updateSubjectAverageChart() {
+    const ctx = document.getElementById('subjectChart');
+    if (!ctx) return;
+    
+    if (charts.subjectChart) {
+        charts.subjectChart.destroy();
+    }
+    
+    const subjectAverages = {};
+    const subjectCounts = {};
+    
+    gradeRecords.forEach(record => {
+        if (!subjectAverages[record.subject]) {
+            subjectAverages[record.subject] = 0;
+            subjectCounts[record.subject] = 0;
+        }
+        subjectAverages[record.subject] += record.score;
+        subjectCounts[record.subject]++;
+    });
+    
+    const labels = [];
+    const data = [];
+    const colors = ['#1FB8CD', '#FFC185', '#B4413C', '#ECEBD5', '#5D878F', '#DB4545'];
+    
+    Object.keys(subjectAverages).forEach(subject => {
+        labels.push(subject);
+        data.push((subjectAverages[subject] / subjectCounts[subject]).toFixed(1));
+    });
+    
+    charts.subjectChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: '平均分',
+                data: data,
+                backgroundColor: colors,
+                borderColor: 'rgba(255, 255, 255, 0.2)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100,
+                    ticks: {
+                        color: 'white'
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: 'white'
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    labels: {
+                        color: 'white'
+                    }
+                }
+            }
+        }
+    });
+}
+
+function updateProgressChart() {
+    const ctx = document.getElementById('progressChart');
+    if (!ctx) return;
+    
+    if (charts.progressChart) {
+        charts.progressChart.destroy();
+    }
+    
+    // Group records by subject and sort by date
+    const subjectData = {};
+    gradeRecords.forEach(record => {
+        if (!subjectData[record.subject]) {
+            subjectData[record.subject] = [];
+        }
+        subjectData[record.subject].push({
+            date: new Date(record.id),
+            score: record.score
+        });
+    });
+    
+    // Sort by date and create datasets
+    const datasets = [];
+    const colors = ['#1FB8CD', '#FFC185', '#B4413C', '#ECEBD5', '#5D878F', '#DB4545'];
+    let colorIndex = 0;
+    
+    Object.keys(subjectData).forEach(subject => {
+        subjectData[subject].sort((a, b) => a.date - b.date);
+        
+        datasets.push({
+            label: subject,
+            data: subjectData[subject].map((point, index) => ({
+                x: index + 1,
+                y: point.score
+            })),
+            borderColor: colors[colorIndex % colors.length],
+            backgroundColor: colors[colorIndex % colors.length] + '20',
+            tension: 0.4,
+            fill: false
+        });
+        colorIndex++;
+    });
+    
+    charts.progressChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            datasets: datasets
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100,
+                    ticks: {
+                        color: 'white'
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                },
+                x: {
+                    type: 'linear',
+                    position: 'bottom',
+                    ticks: {
+                        color: 'white'
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    labels: {
+                        color: 'white'
+                    }
+                }
+            }
+        }
+    });
+}
+
+// Notification system
+function showNotification(message, type = 'info') {
+    const notification = document.createElement('div');
+    notification.className = `notification notification-${type}`;
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(50, 200, 235, 0.9);
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        z-index: 1000;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    `;
+    
+    if (type === 'success') {
+        notification.style.background = 'rgba(74, 222, 128, 0.9)';
+    } else if (type === 'error') {
+        notification.style.background = 'rgba(239, 68, 68, 0.9)';
+    }
+    
+    notification.textContent = message;
+    document.body.appendChild(notification);
+    
+    // Animate in
+    setTimeout(() => {
+        notification.style.transform = 'translateX(0)';
+    }, 10);
+    
+    // Remove after 3 seconds
+    setTimeout(() => {
+        notification.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+            if (notification.parentNode) {
+                notification.parentNode.removeChild(notification);
+            }
+        }, 300);
+    }, 3000);
+}
+
+// Utility functions
+function formatDate(date) {
+    return new Date(date).toLocaleDateString('zh-HK');
+}

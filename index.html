@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acry Study Hub - DSE資源整理站</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><span class="gradient-text">Acry Study Hub</span></h1>
+                    <p>DSE 2026 資源整理站</p>
+                </div>
+                <nav class="nav">
+                    <button class="nav-btn active" data-section="home">
+                        <i class="fas fa-home"></i> 首頁
+                    </button>
+                    <button class="nav-btn" data-section="dashboard">
+                        <i class="fas fa-chart-line"></i> 成績追蹤
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="container">
+                <!-- Countdown Section -->
+                <div class="countdown-section">
+                    <h2 class="section-title gradient-text">DSE 2026 倒數計時</h2>
+                    <div class="countdown-grid">
+                        <div class="countdown-card" data-exam="中文">
+                            <h3>中文</h3>
+                            <div class="countdown-timer" data-date="2026-04-09">
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="days">000</span>
+                                    <span class="time-label">日</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="hours">00</span>
+                                    <span class="time-label">時</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="minutes">00</span>
+                                    <span class="time-label">分</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="seconds">00</span>
+                                    <span class="time-label">秒</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="countdown-card" data-exam="English">
+                            <h3>English</h3>
+                            <div class="countdown-timer" data-date="2026-04-10">
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="days">000</span>
+                                    <span class="time-label">日</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="hours">00</span>
+                                    <span class="time-label">時</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="minutes">00</span>
+                                    <span class="time-label">分</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="seconds">00</span>
+                                    <span class="time-label">秒</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="countdown-card" data-exam="Math">
+                            <h3>數學</h3>
+                            <div class="countdown-timer" data-date="2026-04-13">
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="days">000</span>
+                                    <span class="time-label">日</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="hours">00</span>
+                                    <span class="time-label">時</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="minutes">00</span>
+                                    <span class="time-label">分</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="seconds">00</span>
+                                    <span class="time-label">秒</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="countdown-card" data-exam="M2">
+                            <h3>M2</h3>
+                            <div class="countdown-timer" data-date="2026-04-30">
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="days">000</span>
+                                    <span class="time-label">日</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="hours">00</span>
+                                    <span class="time-label">時</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="minutes">00</span>
+                                    <span class="time-label">分</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="seconds">00</span>
+                                    <span class="time-label">秒</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="countdown-card" data-exam="Econ">
+                            <h3>經濟</h3>
+                            <div class="countdown-timer" data-date="2026-05-04">
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="days">000</span>
+                                    <span class="time-label">日</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="hours">00</span>
+                                    <span class="time-label">時</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="minutes">00</span>
+                                    <span class="time-label">分</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="seconds">00</span>
+                                    <span class="time-label">秒</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="countdown-card" data-exam="中史">
+                            <h3>中史</h3>
+                            <div class="countdown-timer" data-date="2026-04-29">
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="days">000</span>
+                                    <span class="time-label">日</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="hours">00</span>
+                                    <span class="time-label">時</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="minutes">00</span>
+                                    <span class="time-label">分</span>
+                                </div>
+                                <div class="time-unit">
+                                    <span class="time-value" data-unit="seconds">00</span>
+                                    <span class="time-label">秒</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resources Section -->
+                <div class="resources-section">
+                    <h2 class="section-title gradient-text">學習資源</h2>
+                    <div class="resources-grid">
+                        <div class="resource-category" data-category="中文">
+                            <div class="category-header">
+                                <i class="fas fa-book"></i>
+                                <h3>中文</h3>
+                                <i class="fas fa-chevron-down expand-icon"></i>
+                            </div>
+                            <div class="category-content">
+                                <div class="resource-links" id="中文-links"></div>
+                            </div>
+                        </div>
+                        <div class="resource-category" data-category="English">
+                            <div class="category-header">
+                                <i class="fas fa-language"></i>
+                                <h3>English</h3>
+                                <i class="fas fa-chevron-down expand-icon"></i>
+                            </div>
+                            <div class="category-content">
+                                <div class="resource-links" id="English-links"></div>
+                            </div>
+                        </div>
+                        <div class="resource-category" data-category="Math">
+                            <div class="category-header">
+                                <i class="fas fa-calculator"></i>
+                                <h3>數學</h3>
+                                <i class="fas fa-chevron-down expand-icon"></i>
+                            </div>
+                            <div class="category-content">
+                                <div class="resource-links" id="Math-links"></div>
+                            </div>
+                        </div>
+                        <div class="resource-category" data-category="M2">
+                            <div class="category-header">
+                                <i class="fas fa-square-root-alt"></i>
+                                <h3>M2</h3>
+                                <i class="fas fa-chevron-down expand-icon"></i>
+                            </div>
+                            <div class="category-content">
+                                <div class="resource-links" id="M2-links"></div>
+                            </div>
+                        </div>
+                        <div class="resource-category" data-category="Econ">
+                            <div class="category-header">
+                                <i class="fas fa-chart-bar"></i>
+                                <h3>經濟</h3>
+                                <i class="fas fa-chevron-down expand-icon"></i>
+                            </div>
+                            <div class="category-content">
+                                <div class="resource-links" id="Econ-links"></div>
+                            </div>
+                        </div>
+                        <div class="resource-category" data-category="中史">
+                            <div class="category-header">
+                                <i class="fas fa-scroll"></i>
+                                <h3>中史</h3>
+                                <i class="fas fa-chevron-down expand-icon"></i>
+                            </div>
+                            <div class="category-content">
+                                <div class="resource-links" id="中史-links"></div>
+                            </div>
+                        </div>
+                        <div class="resource-category" data-category="Other">
+                            <div class="category-header">
+                                <i class="fas fa-tools"></i>
+                                <h3>其他資源</h3>
+                                <i class="fas fa-chevron-down expand-icon"></i>
+                            </div>
+                            <div class="category-content">
+                                <div class="resource-links" id="Other-links"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="section">
+            <div class="container">
+                <h2 class="section-title gradient-text">成績追蹤儀表板</h2>
+                
+                <!-- Grade Input Form -->
+                <div class="grade-input-section">
+                    <div class="glass-card">
+                        <h3>新增成績記錄</h3>
+                        <form id="grade-form">
+                            <div class="form-group">
+                                <label for="subject">科目</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">選擇科目</option>
+                                    <option value="中文">中文</option>
+                                    <option value="English">English</option>
+                                    <option value="Math">數學</option>
+                                    <option value="M2">M2</option>
+                                    <option value="Econ">經濟</option>
+                                    <option value="中史">中史</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="paper-name">試卷名稱</label>
+                                <input type="text" id="paper-name" name="paperName" placeholder="例如：Mock 1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="score">分數</label>
+                                <input type="number" id="score" name="score" min="0" max="100" placeholder="輸入分數" required>
+                            </div>
+                            <button type="submit" class="btn--primary">新增記錄</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Charts Section -->
+                <div class="charts-section">
+                    <div class="charts-grid">
+                        <div class="chart-card">
+                            <h3>等級分佈</h3>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="gradeChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="chart-card">
+                            <h3>各科平均分</h3>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="subjectChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="chart-card full-width">
+                            <h3>學習進度曲線</h3>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="progressChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grade Records Table -->
+                <div class="grade-records">
+                    <div class="glass-card">
+                        <h3>成績記錄</h3>
+                        <div class="table-container">
+                            <table id="grade-table">
+                                <thead>
+                                    <tr>
+                                        <th>科目</th>
+                                        <th>試卷</th>
+                                        <th>分數</th>
+                                        <th>等級</th>
+                                        <th>日期</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="grade-table-body">
+                                    <!-- Dynamic content -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Made by <span class="gradient-text">Acry CEO</span></p>
+                <a href="https://github.com/Cryjai" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
