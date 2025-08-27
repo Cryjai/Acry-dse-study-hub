@@ -32,7 +32,7 @@
 ## 👽 **Contact & Credit**
 
 - 🔥 CEO兼全港最型少女：[Acry](https://github.com/Cryjai)
-- 👾 Feedback/提意/串你： [mickeycry0506@gmail.com](mailto:mickeycry0506@gmail.com)
+- 👾 Feedback： [mickeycry0506@gmail.com](mailto:mickeycry0506@gmail.com)
 - 🔗 [GitHub](https://github.com/Cryjai)
 
 ---
