@@ -22,7 +22,7 @@
 ## 😈 **使用方法 | How to Use**
 
 1. 打開呢個website 
-2. 點擊分類，一鍵睇晒 如果想fully access所有資源 請fps我 [![fps code](fps.jpg)](fps.jpg)
+2. 點擊分類，一鍵睇晒 如果想fully access所有資源 請fps我100蚊hahaha [![fps code](fps.jpg)](fps.jpg)
 3. 成績dashboard輸入分數，唔係AI，係你自己自動評等
 4. 資料持久化，下次再嚟study都唔會死清光
 5. 新resource直接fork同加entry，毒舌Description必需有！
