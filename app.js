@@ -10,12 +10,12 @@ const resourcesData = {
     "English": [
         {
             title: "Mr Wong English corner youtube",
-            description: "英文語法和寫作技巧教學",
+            description: "英文寫作技巧教學",
             url: "https://youtube.com/@mrwongsenglishcorner8789?feature=shared"
         },
         {
             title: "MingSir English youtube",
-            description: "英文綜合技能訓練",
+            description: "教英文嘅youtuber",
             url: "https://youtube.com/@mingsirenglish?feature=shared"
         }
     ],
@@ -69,12 +69,12 @@ const resourcesData = {
         },
         {
             title: "Change variables & substitute",
-            description: "換元與代換技巧",
+            description: "Integral change variables",
             url: "https://youtube.com/playlist?list=PL19ztSaw3zaXiTCijSpFVaiYLNNIHlkvl&feature=shared"
         },
         {
             title: "Rate of change",
-            description: "變化率相關題型",
+            description: "D野嘅Rate of change",
             url: "https://youtube.com/playlist?list=PL19ztSaw3zaXkQNxQ5gZyb_tE_nE2GO7q&feature=shared"
         },
         {
@@ -84,12 +84,12 @@ const resourcesData = {
         },
         {
             title: "Vector problems",
-            description: "向量相關問題",
+            description: "vector相關問題",
             url: "https://youtube.com/playlist?list=PL19ztSaw3zaUGlpOx7YGu-IPn12i_fN5A&feature=shared"
         },
         {
             title: "Matrix operations",
-            description: "矩陣運算專題",
+            description: "matrix運算專題",
             url: "https://youtube.com/playlist?list=PL19ztSaw3zaUMy2Fc3SbOSh_oMJ5RGPKW&feature=shared"
         },
         {
@@ -140,7 +140,7 @@ const resourcesData = {
     "Other": [
         {
             title: "毒舌To do list",
-            description: "生活管理工具",
+            description: "Time is money to do list",
             url: "https://cryjai.github.io/life-bankruptcy-trackor/"
         }
     ]
@@ -157,7 +157,7 @@ const examDates = {
 
 const gradingCutoffs = {
     "中文": {"5**": 70, "5*": 67, "5": 64, "4": 60, "3": 51, "2": 42, "1": 32},
-    "English": {"5**": 85, "5*": 74, "5": 65, "4": 60, "3": 49, "2": 40, "1": 31},
+    "English": {"5**": 85, "5*": 80, "5": 75, "4": 60, "3": 59, "2": 40, "1": 31},
     "Math": {"5**": 93, "5*": 88, "5": 80, "4": 70, "3": 50, "2": 40, "1": 30},
     "M2": {"5**": 88, "5*": 78, "5": 67, "4": 59, "3": 51, "2": 44, "1": 35},
     "Econ": {"5**": 90, "5*": 88, "5": 85, "4": 57, "3": 48, "2": 40, "1": 30},
