@@ -247,17 +247,27 @@ function initializeCountdowns() {
     });
 }
 
-function updateCountdown(timerElement, targetDate) {
+function updateCountdown(timerElement, targetDateStr) {
+    // targetDateStr should be in "YYYY-MM-DD"
+    // Set time to 9:00 AM (local HK time +08:00)
+    const dateParts = targetDateStr.split('-');
+    // Months are zero-based in JS Date (0 = January)
+    const target = new Date(
+        parseInt(dateParts[0]),           // year
+        parseInt(dateParts[1]) - 1,       // month
+        parseInt(dateParts[2]),           // day
+        9, 0, 0                           // 09:00:00
+    ).getTime();
+
     const now = new Date().getTime();
-    const target = new Date(targetDate + 'T09:00:00+08:00').getTime(); // 9 AM HK time
     const distance = target - now;
-    
+
     if (distance > 0) {
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
+
         timerElement.querySelector('[data-unit="days"]').textContent = days.toString().padStart(3, '0');
         timerElement.querySelector('[data-unit="hours"]').textContent = hours.toString().padStart(2, '0');
         timerElement.querySelector('[data-unit="minutes"]').textContent = minutes.toString().padStart(2, '0');
@@ -269,7 +279,6 @@ function updateCountdown(timerElement, targetDate) {
         timerElement.querySelector('[data-unit="seconds"]').textContent = '00';
     }
 }
-
 // Resource population
 function populateResources() {
     Object.keys(resourcesData).forEach(category => {
