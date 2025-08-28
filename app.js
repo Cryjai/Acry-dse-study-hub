@@ -123,6 +123,11 @@ const resourcesData = {
             title: "Youtube Checklist",
             description: "經濟科YouTube溫習清單",
             url: "https://docs.google.com/document/d/11-kpbMYqjhqJKRwx3l-1UOAtoNjmXEGb/edit?usp=drivesdk&ouid=106653973681653359890&rtpof=true&sd=true"
+        },
+        {
+            title: "Herman Yeung Econ Playlist",
+            description: "Herman大佬Econ Playlist",
+            url: "https://youtube.com/playlist?list=PLzDe9mOi1K8pTsr5jwcpqD4fcPTQZetR8&feature=shared"
         }
     ],
     "中史": [
