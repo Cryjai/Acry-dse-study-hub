@@ -1,12 +1,5 @@
 // Application data
 const resourcesData = {
-    "DSE Life backup" : [
-        {
-            title: "DSE by topic& paper",
-            description: "-",
-            url:"https://dsepp.ru/index.html"
-        }
-    ],
     "中文": [
         {
             title: "卷一試題分析",
@@ -179,6 +172,11 @@ const resourcesData = {
             title: "毒舌To do list",
             description: "Time is money to do list",
             url: "https://cryjai.github.io/life-bankruptcy-trackor/"
+        },
+        {
+            title: "DSE Life backup",
+            description: "DSE by topic&by year",
+            url:"https://dsepp.ru/index.html"
         }
     ]
 };
