@@ -1,5 +1,12 @@
 // Application data
 const resourcesData = {
+    "DSE Life backup" : [
+        {
+            title: "DSE by topic& paper",
+            description: "-",
+            url:"https://dsepp.ru/index.html"
+        }
+    ],
     "中文": [
         {
             title: "卷一試題分析",
