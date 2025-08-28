@@ -178,7 +178,8 @@ const resourcesData = {
 
 const examDates = {
     "中文": "2026-04-09",
-    "English": "2026-04-10", 
+    "English P1,2": "2026-04-10",
+    "English p3": "2026-04-11",
     "Math": "2026-04-13",
     "M2": "2026-04-30",
     "Econ": "2026-05-04",
