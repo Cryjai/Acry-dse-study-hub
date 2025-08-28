@@ -5,7 +5,17 @@ const resourcesData = {
             title: "卷一試題分析",
             description: "詳細分析DSE中文卷一試題",
             url: "https://youtube.com/playlist?list=PLq8LKt8nFQcmiySHLuWrSJr-jFy6UkGhg&feature=shared"
-        }
+        },
+        {
+            title: "十二篇範文筆記",
+            description: "純文字Note",
+            url: "https://drive.google.com/drive/folders/166kM9gQUmJiBBdaySleNvSEgf5Dsc2cZ"
+         },
+         {
+            title: "濃老師12篇範文playlist",
+            description: "濃媽媽十二篇精華",
+            url: "https://youtube.com/playlist?list=PLcDPlHGQzt9O4QNBNFTjzQsVwhChhGNWu&feature=shared"
+          }
     ],
     "English": [
         {
@@ -37,9 +47,14 @@ const resourcesData = {
         },
         {
             title: "3D geometry playlist",
-            description: "立體幾何專題",
+            description: "3D專題",
             url: "https://youtube.com/playlist?list=PL19ztSaw3zaXjjZV0XoXCqfVvdzJ7oY-J&feature=shared"
         },
+        {
+            title: "四心問題Playlist",
+            description: "4 center",
+            url: "https://youtube.com/playlist?list=PL19ztSaw3zaV-DjU3YkjEPeGD1at2Swiq&feature=shared"
+  }
         {
             title: "F6 Core Regular Course",
             description: "中六核心數學常規課程",
@@ -140,7 +155,17 @@ const resourcesData = {
             title: "DSE Past Papers",
             description: "中史歷屆試題",
             url: "https://drive.google.com/drive/folders/1GlYHHL7VabCU-uG8o3--cMIC-xT0ou_7"
-        }
+        },
+        {
+            title: "DSE中史重點講解Playlist",
+            description: "By CPY教室",
+            url: "https://youtube.com/playlist?list=PL60ryjCJxV2jKLj3uFezb9xG50ujVJlaS&feature=shared"
+         },
+         {
+             title: "DSE中史溫習Playlist",
+             description: "by Pan Tong",
+             url: "https://youtube.com/playlist?list=PLsxXULDSvjUC6FXuWbmWG05ivB36-Ih-E&feature=shared"
+         }
     ],
     "Other": [
         {
