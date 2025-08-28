@@ -54,7 +54,7 @@ const resourcesData = {
             title: "四心問題Playlist",
             description: "4 center",
             url: "https://youtube.com/playlist?list=PL19ztSaw3zaV-DjU3YkjEPeGD1at2Swiq&feature=shared"
-  }
+        },
         {
             title: "F6 Core Regular Course",
             description: "中六核心數學常規課程",
