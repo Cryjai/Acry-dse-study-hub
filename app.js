@@ -135,6 +135,11 @@ const resourcesData = {
             url: "https://drive.google.com/drive/folders/1A3Q5G2th7QJB7jRH0bgIipMTYrO1zH09"
         },
         {
+            title: "DSE exercise",
+            description: "econ exercise+by topic",
+            url: "https://drive.google.com/drive/folders/1yBWeGAsVm-lERLGLlHkf_Gq_XjsXEiTm?usp=drive_link"
+        },
+        {
             title: "Youtube Checklist",
             description: "經濟科YouTube溫習清單",
             url: "https://docs.google.com/document/d/11-kpbMYqjhqJKRwx3l-1UOAtoNjmXEGb/edit?usp=drivesdk&ouid=106653973681653359890&rtpof=true&sd=true"
