@@ -15,6 +15,11 @@ const resourcesData = {
             title: "濃老師12篇範文playlist",
             description: "濃媽媽十二篇精華",
             url: "https://youtube.com/playlist?list=PLcDPlHGQzt9O4QNBNFTjzQsVwhChhGNWu&feature=shared"
+          },
+          {
+            title: "實用文Playlist",
+            description: "卷二甲部",
+            url: "https://youtube.com/playlist?list=PLJohlpnPozqOuefc765jwCsaa_veu30K7&feature=shared"
           }
     ],
     "English": [
