@@ -1,10 +1,14 @@
-// Application data
 const resourcesData = {
     "中文": [
         {
             title: "卷一試題分析",
             description: "詳細分析DSE中文卷一試題",
             url: "https://youtube.com/playlist?list=PLq8LKt8nFQcmiySHLuWrSJr-jFy6UkGhg&feature=shared"
+        },
+        {
+            title: "了解中國文化",
+            description: "儒家道家思想",
+            url: "https://youtube.com/playlist?list=PLJohlpnPozqPvMfBxpxw7jiCqJg5twzMq&feature=shared"
         },
         {
             title: "中文mock paper",
@@ -52,6 +56,16 @@ const resourcesData = {
             title: "MingSir English youtube",
             description: "教英文嘅youtuber",
             url: "https://youtube.com/@mingsirenglish?feature=shared"
+        },
+        {
+            title: "ChuLowC",
+            description: "funny dse english",
+            url: "https://www.youtube.com/@ChuLowC"
+        },
+        {
+            title: "5**English",
+            description: "dse eng youtuber",
+            url: "https://www.youtube.com/@5DSEEnglish/playlists"
         }
     ],
     "Math": [
