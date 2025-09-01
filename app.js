@@ -6,6 +6,11 @@ const resourcesData = {
             url: "https://youtube.com/playlist?list=PLq8LKt8nFQcmiySHLuWrSJr-jFy6UkGhg&feature=shared"
         },
         {
+            title: "閱讀理解分析",
+            description: "詳細分析by miss wwk",
+            url: "https://youtube.com/playlist?list=PLVbrojPh32KJKBBWoQnSdiAkS96ypRmTO&feature=shared"
+        }, 
+        {
             title: "了解中國文化",
             description: "儒家道家思想",
             url: "https://youtube.com/playlist?list=PLJohlpnPozqPvMfBxpxw7jiCqJg5twzMq&feature=shared"
