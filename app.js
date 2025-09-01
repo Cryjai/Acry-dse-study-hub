@@ -71,6 +71,14 @@ const resourcesData = {
             title: "5**English",
             description: "dse eng youtuber",
             url: "https://www.youtube.com/@5DSEEnglish/playlists"
+        },
+        {
+            title: "English Youtube Playlist",
+            description: "useful resources",
+            url: "{
+            title: "5**English",
+            description: "dse eng youtuber",
+            url: "https://youtube.com/playlist?list=PLJohlpnPozqOc2DWRqs3nO1mJpHwd4pWJ&feature=shared"
         }
     ],
     "Math": [
