@@ -7,9 +7,19 @@ const resourcesData = {
             url: "https://youtube.com/playlist?list=PLq8LKt8nFQcmiySHLuWrSJr-jFy6UkGhg&feature=shared"
         },
         {
+            title: "中文mock paper",
+            description: "唔同學校嘅mock paper",
+            url: "https://drive.google.com/drive/folders/1501dk_UE3HeHf6_W4DHGKuCRQAjeNF5B?usp=sharing"
+        },
+        {
             title: "十二篇範文筆記",
-            description: "純文字Note",
+            description: "純文字Note 臨急用",
             url: "https://drive.google.com/drive/folders/166kM9gQUmJiBBdaySleNvSEgf5Dsc2cZ"
+         },
+        {
+            title: "十二篇範文學校筆記＋練習",
+            description: "超pro 主要睇呢個",
+            url: "https://drive.google.com/drive/folders/1HjbnQXwNSZ73LyhrX_9ypgP81VFZX8V4?usp=sharing"
          },
          {
             title: "濃老師12篇範文playlist",
@@ -17,9 +27,19 @@ const resourcesData = {
             url: "https://youtube.com/playlist?list=PLcDPlHGQzt9O4QNBNFTjzQsVwhChhGNWu&feature=shared"
           },
           {
+            title: "出版社12篇試題庫",
+            description: "exercise", 
+            url: "https://drive.google.com/drive/folders/1uBUbiGjFZlluDUP5xKpjW1zQAe5cb1F9?usp=sharing"
+          },
+          {
             title: "實用文Playlist",
             description: "卷二甲部",
             url: "https://youtube.com/playlist?list=PLJohlpnPozqOuefc765jwCsaa_veu30K7&feature=shared"
+          },
+          {
+            title: "實用文筆記",
+            description: "卷二甲部",
+            url: "https://drive.google.com/drive/folders/1jsEJwr6Acj_4BRlk8SGOuQO4ED_c2EUC?usp=drive_link"
           }
     ],
     "English": [
@@ -44,6 +64,11 @@ const resourcesData = {
             title: "DSE Past Papers",
             description: "歷屆DSE數學試題",
             url: "https://drive.google.com/drive/folders/1NwYe3Mw51v3QpQ_x_bSKy_-VHuFYC5-9"
+        },
+        {
+            title: "PowerUp MC",
+            description: "dse math advance exercise",
+            url: "https://drive.google.com/drive/folders/1Wg8NL3gZ9CbeSu9sBCMxSkOsUin0tms4?usp=sharing"
         },
         {
             title: "我有數要問 playlist",
