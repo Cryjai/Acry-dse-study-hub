@@ -132,6 +132,16 @@ const resourcesData = {
             url: "https://drive.google.com/drive/folders/1q6TCLb6keLplbD6NJxTmrLhDvPJqxABk"
         },
         {
+            title: "F6 Regular course",
+            description: "by k liu",
+            url: "https://youtube.com/playlist?list=PL19ztSaw3zaXQTci1UoNwIwamtNFcU9HS&feature=shared"
+        },
+        {
+            title: "F6 intensive course",
+            description: "by k liu",
+            url: "https://youtube.com/playlist?list=PL19ztSaw3zaXhagQdkKorih8TfZbEV0af&feature=shared"
+        },
+        {
             title: "Binomial theorem",
             description: "二項式定理專題",
             url: "https://youtube.com/playlist?list=PL19ztSaw3zaXFteKO6j6RxxvRJ7Pzbou7&feature=shared"
