@@ -58,6 +58,11 @@ const resourcesData = {
             url: "https://youtube.com/@mrwongsenglishcorner8789?feature=shared"
         },
         {
+            title: "Reading Exercise",
+            description: "狂操reading",
+            url: "https://drive.google.com/drive/folders/1TTyw0rSEx3VVUII0O6QjP1e5DmIjZGky"
+        },
+        {
             title: "MingSir English youtube",
             description: "教英文嘅youtuber",
             url: "https://youtube.com/@mingsirenglish?feature=shared"
