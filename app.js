@@ -63,6 +63,11 @@ const resourcesData = {
             url: "https://drive.google.com/drive/folders/1TTyw0rSEx3VVUII0O6QjP1e5DmIjZGky"
         },
         {
+            title: "Listening Exercise",
+            description: "操操Listening",
+            url: "https://drive.google.com/drive/folders/1eR4juLA6vax5dsxqVhRv63NcEh6CjoOy"
+        },
+        {
             title: "MingSir English youtube",
             description: "教英文嘅youtuber",
             url: "https://youtube.com/@mingsirenglish?feature=shared"
