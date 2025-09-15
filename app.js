@@ -256,6 +256,11 @@ const resourcesData = {
             title: "DSE Life backup",
             description: "DSE by topic&by year",
             url:"https://dsepp.ru/index.html"
+        },
+        {
+            title: "Study Flash Card+ Quiz",
+            description: "for memorizing",
+            url:"https://cryjai.github.io/acry-infinite-dse-quiz/"     
         }
     ]
 };
