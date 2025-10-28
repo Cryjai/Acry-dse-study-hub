@@ -351,26 +351,70 @@ function initializeCountdowns() {
     countdownTimers.forEach(timer => {
         const targetDate = timer.getAttribute('data-date');
         if (targetDate) {
+            // run immediately and then every second
             updateCountdown(timer, targetDate);
             setInterval(() => updateCountdown(timer, targetDate), 1000);
+        } else {
+            // If data-date missing, show zeros
+            setCountdownZero(timer);
         }
     });
 }
 
-function updateCountdown(timerElement, targetDateStr) {
-    // targetDateStr should be in "YYYY-MM-DD"
-    // Set time to 9:00 AM (local HK time +08:00)
-    const dateParts = targetDateStr.split('-');
-    // Months are zero-based in JS Date (0 = January)
-    const target = new Date(
-        parseInt(dateParts[0]),           // year
-        parseInt(dateParts[1]) - 1,       // month
-        parseInt(dateParts[2]),           // day
-        9, 0, 0                           // 09:00:00
-    ).getTime();
+function setCountdownZero(timerElement) {
+    if (!timerElement) return;
+    const d = timerElement.querySelector('[data-unit="days"]');
+    const h = timerElement.querySelector('[data-unit="hours"]');
+    const m = timerElement.querySelector('[data-unit="minutes"]');
+    const s = timerElement.querySelector('[data-unit="seconds"]');
+    if (d) d.textContent = '000';
+    if (h) h.textContent = '00';
+    if (m) m.textContent = '00';
+    if (s) s.textContent = '00';
+}
 
-    const now = new Date().getTime();
-    const distance = target - now;
+function updateCountdown(timerElement, targetDateStr) {
+    // Accepts formats like "YYYY-MM-DD" or "YYYY/MM/DD".
+    // We'll build an ISO timestamp at 09:00:00 with HK timezone (+08:00)
+    if (!timerElement) return;
+    if (!targetDateStr) {
+        setCountdownZero(timerElement);
+        return;
+    }
+
+    targetDateStr = String(targetDateStr).trim();
+
+    let targetTimestamp = NaN;
+
+    // If already an ISO-like date (contains 'T' or timezone) try Date.parse first
+    if (/T/.test(targetDateStr) || /[+-]\d{2}:?\d{2}$/.test(targetDateStr)) {
+        targetTimestamp = Date.parse(targetDateStr);
+    } else {
+        // Normalize separators to '-'
+        const normalized = targetDateStr.replace(/\//g, '-');
+        // Extract YYYY-MM-DD (ignore any trailing time if present)
+        const dateMatch = normalized.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+        if (dateMatch) {
+            const y = dateMatch[1];
+            const mo = dateMatch[2].padStart(2, '0');
+            const d = dateMatch[3].padStart(2, '0');
+            // Explicitly set 09:00:00 with HK timezone (+08:00) so browsers interpret consistently
+            const isoWithTZ = `${y}-${mo}-${d}T09:00:00+08:00`;
+            targetTimestamp = Date.parse(isoWithTZ);
+        } else {
+            // Fallback - try Date.parse on the raw string
+            targetTimestamp = Date.parse(targetDateStr);
+        }
+    }
+
+    if (isNaN(targetTimestamp)) {
+        console.warn('Invalid countdown date:', targetDateStr, timerElement);
+        setCountdownZero(timerElement);
+        return;
+    }
+
+    const now = Date.now();
+    const distance = targetTimestamp - now;
 
     if (distance > 0) {
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -378,15 +422,17 @@ function updateCountdown(timerElement, targetDateStr) {
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        timerElement.querySelector('[data-unit="days"]').textContent = days.toString().padStart(3, '0');
-        timerElement.querySelector('[data-unit="hours"]').textContent = hours.toString().padStart(2, '0');
-        timerElement.querySelector('[data-unit="minutes"]').textContent = minutes.toString().padStart(2, '0');
-        timerElement.querySelector('[data-unit="seconds"]').textContent = seconds.toString().padStart(2, '0');
+        const dElem = timerElement.querySelector('[data-unit="days"]');
+        const hElem = timerElement.querySelector('[data-unit="hours"]');
+        const mElem = timerElement.querySelector('[data-unit="minutes"]');
+        const sElem = timerElement.querySelector('[data-unit="seconds"]');
+
+        if (dElem) dElem.textContent = String(days).padStart(3, '0');
+        if (hElem) hElem.textContent = String(hours).padStart(2, '0');
+        if (mElem) mElem.textContent = String(minutes).padStart(2, '0');
+        if (sElem) sElem.textContent = String(seconds).padStart(2, '0');
     } else {
-        timerElement.querySelector('[data-unit="days"]').textContent = '000';
-        timerElement.querySelector('[data-unit="hours"]').textContent = '00';
-        timerElement.querySelector('[data-unit="minutes"]').textContent = '00';
-        timerElement.querySelector('[data-unit="seconds"]').textContent = '00';
+        setCountdownZero(timerElement);
     }
 }
 // Resource population
@@ -807,3 +853,4 @@ function showNotification(message, type = 'info') {
 function formatDate(date) {
     return new Date(date).toLocaleDateString('zh-HK');
 }
+
