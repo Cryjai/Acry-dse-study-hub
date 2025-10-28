@@ -255,12 +255,12 @@ const resourcesData = {
         {
             title: "DSE Life backup",
             description: "DSE by topic&by year",
-            url:"https://dsepp.ru/index.html"
+            url:"https://drive.google.com/drive/folders/1d47c-ZiAr03_rL0OnfWbnbccKRKyMCQL?usp=sharing"
         },
         {
-            title: "Study Flash Card+ Quiz",
-            description: "for memorizing",
-            url:"https://cryjai.github.io/acry-infinite-dse-quiz/"     
+            title: "Study Room",
+            description: "Study room with to do list, timer, youtube watching,study music",
+            url:"https://app.csw.live/room?id=mickeycry0506&j=1"     
         }
     ]
 };
