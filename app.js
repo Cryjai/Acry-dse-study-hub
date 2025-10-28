@@ -246,7 +246,7 @@ const resourcesData = {
              url: "https://youtube.com/playlist?list=PLsxXULDSvjUC6FXuWbmWG05ivB36-Ih-E&feature=shared"
          }
     ],
-    "Other": [
+    "Others/Tools": [
         {
             title: "毒舌To do list",
             description: "Time is money to do list",
@@ -262,6 +262,21 @@ const resourcesData = {
             description: "Study room with to do list, timer, youtube watching,study music",
             url:"https://app.csw.live/room?id=mickeycry0506&j=1"     
         }
+        {
+            title: "Youtube len check",
+            description: "睇下youtube playlist有幾多個鐘幾分鐘",
+            url:"https://ytplaylist-len.sharats.dev/"
+        },
+        {
+            title: "turn pdf 2in1 into 1in1 page",
+            description: "DSE.life by topic專用",
+            url:"https://online2pdf.com/en/cut-pdf-pages-into-halves"
+        },
+        {
+            title: "slit pdf odd even page",
+            description: "for those who got scam to buy the printer without double side printing",
+            url:"https://www.sciweavers.org/free-online-pdf-split"
+        },
     ]
 };
 
@@ -271,8 +286,8 @@ const examDates = {
     "English p3": "2026-04-11",
     "Math": "2026-04-13",
     "M2": "2026-04-30",
-    "Econ": "2026-05-04",
-    "中史": "2026-04-29"
+    "中史": "2026-04-29",
+    "Econ": "2026-05-04"
 };
 
 const gradingCutoffs = {
