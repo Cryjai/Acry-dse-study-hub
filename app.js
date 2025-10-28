@@ -281,7 +281,7 @@ const resourcesData = {
             title: "slit pdf odd even page",
             description: "for those who got scam to buy the printer without double side printing",
             url:"https://www.sciweavers.org/free-online-pdf-split"
-        },
+        }
     ]
 };
 
