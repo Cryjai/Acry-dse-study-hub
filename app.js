@@ -325,6 +325,7 @@ function initializeApp() {
 }
 
 // Navigation functionality
+// Replace the existing initializeNavigation() function with this:
 function initializeNavigation() {
     const navButtons = document.querySelectorAll('.nav-btn');
     const sections = document.querySelectorAll('.section');
@@ -333,17 +334,21 @@ function initializeNavigation() {
         button.addEventListener('click', () => {
             const targetSection = button.getAttribute('data-section');
             
-            // Update navigation
+            // Update navigation active state
             navButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
             
-            // Update sections
+            // Update sections (hide all, then show target if found)
             sections.forEach(section => section.classList.remove('active'));
-            document.getElementById(targetSection).classList.add('active');
+            const targetEl = document.getElementById(targetSection);
+            if (targetEl) {
+                targetEl.classList.add('active');
+            } else {
+                console.warn('Navigation target not found for:', targetSection);
+            }
         });
     });
 }
-
 // Countdown timer functionality
 function initializeCountdowns() {
     const countdownTimers = document.querySelectorAll('.countdown-timer');
