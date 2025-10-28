@@ -1,4 +1,4 @@
-# 🚀 Acry Study Hub | DSE資源整理神器
+# 🚀 Banana mood | 資源整理神器
 
 > **香港ADHD少女 x CEO出品 🔥  
 > 全網最潮DSE資源站——讀書唔再死蠢**  
