@@ -266,7 +266,7 @@ const resourcesData = {
             title: "Study Room",
             description: "Study room with to do list, timer, youtube watching,study music",
             url:"https://app.csw.live/room?id=mickeycry0506&j=1"     
-        }
+        },
         {
             title: "Youtube len check",
             description: "睇下youtube playlist有幾多個鐘幾分鐘",
