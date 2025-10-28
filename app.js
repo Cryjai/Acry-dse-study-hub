@@ -251,7 +251,7 @@ const resourcesData = {
              url: "https://youtube.com/playlist?list=PLsxXULDSvjUC6FXuWbmWG05ivB36-Ih-E&feature=shared"
          }
     ],
-    "Other": [
+        "Other": [
         {
             title: "毒舌To do list",
             description: "Time is money to do list",
