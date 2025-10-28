@@ -1,6 +1,11 @@
 const resourcesData = {
     "中文": [
         {
+            title: "中六中文義教片",
+            description: "成個dse syllabus covered",
+            url: "https://youtube.com/playlist?list=PLOctg-6XjVhom3a42JqoVjgCeBubZ9OqX&si=Kef88kATAGK2nMc_"
+        },
+        {
             title: "卷一試題分析",
             description: "詳細分析DSE中文卷一試題",
             url: "https://youtube.com/playlist?list=PLq8LKt8nFQcmiySHLuWrSJr-jFy6UkGhg&feature=shared"
