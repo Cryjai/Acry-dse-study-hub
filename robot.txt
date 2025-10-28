@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /mock/
+Disallow: /notes/
+Disallow: /playlist/
+Disallow: /dse/
