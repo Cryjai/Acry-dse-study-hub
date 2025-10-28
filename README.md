@@ -12,8 +12,8 @@
 ## 🏆 **功能介紹</br>Features**
 
 - **UI超未來感**
-- **倒數計時器** ⏰ 考試日實時警告，溫書唔洗玩垃圾deadline
-- **7大主科資源分類** 🧠 中文/English/Math/M2/Econ/中史/Other  
+- **倒數計時器** ⏰ 實時警告，溫書唔洗玩垃圾deadline
+- **7大資源分類** 🧠 
 - **分數輸入自動評級Dashboard計grade** 📊 Chart.js勁抽成績分析，一睇知自己幾廢
 - **LocalStorage持久化** 💾 儲晒你啲光輝與黑歷史，零人知你當年咩分(我冇興趣攞你data,you're nobody)
 
